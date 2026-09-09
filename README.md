@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:312e81,50:4f46e5,100:7c3aed&height=180&section=header&text=PAMIDI%20SAI%20TEJA%20REDDY&fontSize=38&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:312e81,45:4f46e5,100:7c3aed&height=190&section=header&text=PAMIDI%20SAI%20TEJA%20REDDY&fontSize=40&fontColor=ffffff&fontAlignY=35&animation=fadeIn" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=850&lines=Full-Stack+Software+Developer;AI-Powered+Application+Developer;React.js+%7C+Node.js+%7C+MongoDB;Building+Secure+and+Scalable+Web+Applications" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=2800&pause=900&color=A78BFA&center=true&vCenter=true&width=900&lines=Full-Stack+Software+Developer;AI-Powered+Application+Developer;React.js+%7C+Node.js+%7C+MongoDB;Building+Secure+%26+Scalable+Applications;Computer+Science+Undergraduate" alt="Typing SVG"/>
 </a>
 
 <br/>
@@ -39,23 +39,23 @@
 
 # About
 
-I am a **Full-Stack Software Developer** and Computer Science undergraduate at **Lovely Professional University**, focused on building secure, scalable and practical web applications.
+I am a **Full-Stack Software Developer** and Computer Science undergraduate at **Lovely Professional University**, focused on building secure, practical and scalable software applications.
 
-My development experience spans **React.js, Vite, Node.js, Express.js, MongoDB, JavaScript, Java, C++ and C**, with a strong interest in **AI-powered applications, conversational systems and product engineering**.
+My development work spans **Java, JavaScript, C++, C, React.js, Vite, Node.js, Express.js and MongoDB**, with a growing focus on **AI-powered applications, conversational systems and developer productivity tools**.
 
-I enjoy transforming real-world requirements into complete applications with thoughtful frontend experiences, secure backend APIs, database integration and intelligent automation.
+I enjoy engineering complete products across the frontend, backend, database and authentication layers — from designing responsive interfaces to building APIs, securing application workflows and integrating intelligent systems.
 
-### What I Focus On
+### Engineering Focus
 
 - Full-stack web application development
 - AI-powered and conversational applications
 - REST API development
 - Authentication and authorization
-- Database-driven applications
-- Secure application architecture
+- Database-driven systems
+- Secure backend architecture
 - Developer productivity tools
-- Problem solving and Data Structures & Algorithms
-- Building practical, production-oriented products
+- Data Structures & Algorithms
+- Product-oriented software engineering
 
 ### Open To
 
@@ -89,9 +89,10 @@ I enjoy transforming real-world requirements into complete applications with tho
 </p>
 
 <p>
-<img src="https://img.shields.io/badge/JWT-Authentication-000000?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
+<img src="https://img.shields.io/badge/JWT-Authentication-111827?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
 <img src="https://img.shields.io/badge/REST-APIs-4f46e5?style=flat-square"/>
 <img src="https://img.shields.io/badge/bcrypt-Security-7c3aed?style=flat-square"/>
+<img src="https://img.shields.io/badge/Axios-API%20Client-5A29E4?style=flat-square&logo=axios&logoColor=white"/>
 </p>
 
 ### Cloud, DevOps & Tooling
@@ -101,9 +102,9 @@ I enjoy transforming real-world requirements into complete applications with tho
 </p>
 
 <p>
-<img src="https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black"/>
-<img src="https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white"/>
-<img src="https://img.shields.io/badge/MongoDB%20Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/Render-Deployment-46E3B7?style=flat-square&logo=render&logoColor=black"/>
+<img src="https://img.shields.io/badge/Railway-Deployment-0B0D0E?style=flat-square&logo=railway&logoColor=white"/>
+<img src="https://img.shields.io/badge/MongoDB%20Atlas-Database-47A248?style=flat-square&logo=mongodb&logoColor=white"/>
 </p>
 
 ---
@@ -112,12 +113,12 @@ I enjoy transforming real-world requirements into complete applications with tho
 
 | Domain | Proficiency | Details |
 |---|---|---|
-| AI-Powered Applications | Advanced | Built AI-assisted applications for shopping and software development |
-| Conversational AI | Advanced | Developed natural-language shopping workflows and intent classification |
-| AI Code Assistance | Advanced | Built an AI Coding Mentor for explanation, debugging, optimization and refactoring |
-| AI Fallback Systems | Intermediate | Implemented AI fallback processing for conversational product discovery |
-| Intent Classification | Advanced | Classified 14+ user intents for conversational commerce |
-| AI Developer Tools | Advanced | Developed browser-based AI coding assistance with interactive code editing |
+| AI-Powered Applications | Advanced | Built AI-powered applications for conversational commerce and software development |
+| Conversational AI | Advanced | Developed natural-language shopping and conversational checkout workflows |
+| AI Code Assistance | Advanced | Built an AI coding assistant for explanation, debugging, optimization and refactoring |
+| Intent Classification | Advanced | Implemented classification for 14+ conversational shopping intents |
+| AI Fallback Systems | Intermediate | Combined pattern matching with AI fallback processing |
+| AI Developer Tools | Advanced | Integrated AI assistance into an interactive browser-based coding environment |
 | AI Foundations | Certified | Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate |
 
 ---
@@ -125,40 +126,44 @@ I enjoy transforming real-world requirements into complete applications with tho
 # Featured Projects
 
 <details>
-<summary><strong>SnapBuy — AI-Powered Conversational Commerce Platform</strong></summary>
+<summary><strong>01 — SnapBuy | AI-Powered Conversational Commerce</strong></summary>
 
 ### SnapBuy
 
-AI-powered conversational commerce platform for natural-language product discovery, cart management and checkout.
+An AI-powered conversational commerce platform built with the MERN stack, integrating **Groq AI** for natural-language processing and **Razorpay** for payment processing.
 
 | Category | Details |
 |---|---|
-| Stack | React.js · Vite · Node.js · Express.js · MongoDB · JWT · APIs |
+| Stack | React.js · Vite · Node.js · Express.js · MongoDB · Groq AI · JWT · Razorpay |
 | Scale | 1,260+ products across 8 categories |
 | Performance | 5-tier product search with query normalization |
-| Security | JWT authentication and secure verification workflows |
-| Impact | Natural-language shopping, cart management, coupons and payment handling |
+| Security | JWT authentication · bcrypt · payment signature verification · webhook validation |
+| Impact | Natural-language product discovery, cart management, checkout and order tracking |
 | Repository | [SnapBuy](https://github.com/codewithsaiteja/SnapBuy) |
 
 ### Engineering Highlights
 
 - Classified **14+ user intents** using pattern matching with AI fallback.
-- Designed a **5-tier product search** across 1,260+ products.
-- Implemented cart management and coupon processing.
-- Integrated payment handling.
-- Added secure verification workflows.
-- Supported voice-based shopping workflows.
+- Implemented conversational product discovery.
+- Built a **5-tier search system** across 1,260+ products.
+- Added cart and order management.
+- Integrated coupon processing.
+- Integrated Razorpay payment workflows.
+- Implemented payment retry handling.
+- Added webhook-based payment status updates.
+- Implemented real-time streaming AI responses.
+- Added JWT-based authentication.
 
 </details>
 
 ---
 
 <details>
-<summary><strong>CodeSmart — AI Coding Mentor</strong></summary>
+<summary><strong>02 — CodeSmart | AI Coding Mentor</strong></summary>
 
 ### CodeSmart
 
-AI coding assistant designed to help developers with code explanation, debugging, optimization, refactoring and complexity analysis.
+An AI coding assistant designed to support developers with code explanation, debugging, optimization, refactoring and complexity analysis.
 
 | Category | Details |
 |---|---|
@@ -166,78 +171,82 @@ AI coding assistant designed to help developers with code explanation, debugging
 | Scale | Browser-based AI coding environment |
 | Performance | ~30% improvement in debugging speed |
 | Security | Backend API architecture |
-| Impact | Automates coding assistance, unit-test generation and code conversion |
+| Impact | AI-assisted debugging, code generation, optimization and developer productivity |
 | Repository | [AI-Coding-Mentor](https://github.com/codewithsaiteja/AI-Coding-Mentor) |
 
 ### Engineering Highlights
 
-- Built AI-assisted code explanation and debugging.
-- Added code optimization and refactoring workflows.
-- Implemented complexity analysis.
+- Built AI-assisted code explanation.
+- Added debugging and optimization workflows.
+- Implemented refactoring assistance.
+- Added complexity analysis.
 - Automated unit-test generation.
-- Added code conversion capabilities.
-- Integrated **Monaco Editor** for browser-based development.
-- Implemented progressive AI responses using **chunked HTTP streaming**.
+- Added code conversion functionality.
+- Integrated **Monaco Editor**.
+- Implemented progressive AI responses using chunked HTTP streaming.
 
 </details>
 
 ---
 
 <details>
-<summary><strong>GST Management System</strong></summary>
+<summary><strong>03 — NOVA | Team Productivity Platform</strong></summary>
 
-### GST Management System
+### NOVA
 
-Full-stack GST management application focused on secure authentication, user onboarding and business data persistence.
+A full-stack project management platform for managing projects, tasks and team members from a unified interface.
 
 | Category | Details |
 |---|---|
-| Stack | HTML · CSS · JavaScript · Node.js · Express.js · MongoDB · JWT · bcrypt |
-| Scale | Full-stack GST management application |
-| Performance | Structured frontend and backend workflows |
-| Security | bcrypt hashing · JWT · protected routes · role-based access |
-| Impact | Secure GST-oriented user and application management |
-| Repository | [GST Management System](https://github.com/codewithsaiteja/GST---Management-System) |
+| Stack | React · Vite · Node.js · Express.js · MongoDB · Mongoose · JWT · bcryptjs · Axios |
+| Scale | Multi-user project, task and team management platform |
+| Performance | Dashboard statistics, activity feed and deadline tracking |
+| Security | JWT authentication · protected routes · bcrypt password hashing |
+| Impact | Centralized project, task and team collaboration workflows |
+| Repository | [nova-project-management](https://github.com/codewithsaiteja/nova-project-management) |
 
 ### Engineering Highlights
 
-- Built responsive signup and navigation interfaces.
-- Implemented input validation.
-- Secured credentials using bcrypt hashing.
-- Added MongoDB persistence.
-- Implemented JWT authentication.
-- Protected routes using Express.js middleware.
-- Implemented role-based access control.
-- Connected frontend authentication with backend services.
+- Built project CRUD workflows.
+- Implemented task CRUD operations.
+- Added team member management.
+- Added project progress tracking.
+- Implemented task priority and status workflows.
+- Added overdue task detection.
+- Built dashboard statistics.
+- Added recent activity tracking.
+- Implemented upcoming deadline tracking.
+- Added JWT authentication and protected routes.
 
 </details>
 
 ---
 
 <details>
-<summary><strong>Smart Event Management System</strong></summary>
+<summary><strong>04 — Smart Event Management System</strong></summary>
 
 ### Smart Event Management System
 
-MERN-based event platform developed during summer training for event creation, discovery, registration and participation tracking.
+A MERN-based event management platform developed during summer training for event creation, discovery, registration and participation tracking.
 
 | Category | Details |
 |---|---|
-| Stack | React.js · Node.js · Express.js · MongoDB · JWT · CSS · Axios |
+| Stack | React.js · Node.js · Express.js · MongoDB · JWT · Axios · CSS |
 | Scale | Full-stack event management platform |
 | Performance | API-driven persistent event workflows |
 | Security | JWT authentication · protected routes · role-based authorization |
-| Impact | Digitalized event creation, registration and participation management |
-| Repository | [Smart Event Management System](https://github.com/codewithsaiteja/Smart-Event-Management-System) |
+| Impact | Digital event creation, registration and participation management |
+| Repository | [Smart-Event-Management-System](https://github.com/codewithsaiteja/Smart-Event-Management-System) |
 
 ### Engineering Highlights
 
 - Developed event creation and discovery workflows.
-- Implemented user registration and participation tracking.
-- Created separate Admin and User workflows.
-- Added JWT authentication.
+- Implemented event registration.
+- Added participation tracking.
+- Created Admin and User workflows.
+- Implemented JWT authentication.
 - Protected application routes.
-- Implemented role-based authorization.
+- Added role-based authorization.
 - Connected React, Node.js, Express.js and MongoDB through APIs.
 
 </details>
@@ -245,70 +254,140 @@ MERN-based event platform developed during summer training for event creation, d
 ---
 
 <details>
-<summary><strong>Automated Deadlock Detection Tool</strong></summary>
+<summary><strong>05 — GST Management System</strong></summary>
 
-### Automated Deadlock Detection Tool
+### GST Management System
 
-A systems-oriented tool that analyzes processes, shared resources and dependencies to identify potential deadlock conditions.
+A full-stack GST management application focused on secure user registration, authentication and protected application workflows.
 
 | Category | Details |
 |---|---|
-| Stack | Python |
-| Scale | Operating Systems / Systems Programming |
-| Performance | Automated dependency and resource analysis |
-| Security | Resource allocation analysis |
-| Impact | Detects circular-wait and potential deadlock conditions |
-| Repository | [Automated Deadlock Detection Tool](https://github.com/codewithsaiteja/Automated-Deadlock-Detection-Tool) |
+| Stack | HTML · CSS · JavaScript · Node.js · Express.js · MongoDB · JWT · bcrypt |
+| Scale | Full-stack web application |
+| Performance | Structured frontend and backend workflows |
+| Security | bcrypt hashing · JWT · protected routes · role-based access |
+| Impact | Secure GST-oriented user and application management |
+| Repository | [GST---Management-System](https://github.com/codewithsaiteja/GST---Management-System) |
+
+### Engineering Highlights
+
+- Built responsive signup and navigation interfaces.
+- Implemented input validation.
+- Added bcrypt password hashing.
+- Added MongoDB persistence.
+- Implemented JWT authentication.
+- Protected routes using Express middleware.
+- Added role-based access control.
+- Connected frontend authentication with backend services.
 
 </details>
 
 ---
 
 <details>
-<summary><strong>Zomato Clone</strong></summary>
+<summary><strong>06 — Automated Deadlock Detection Tool</strong></summary>
 
-### Zomato Clone
+### Automated Deadlock Detection Tool
 
-Responsive food-delivery frontend project created to strengthen practical frontend development and responsive UI skills.
+An Operating Systems simulation platform that detects deadlocks using **Resource Allocation Graph cycle detection** and **Banker's Algorithm safety analysis**.
 
 | Category | Details |
 |---|---|
-| Stack | HTML · CSS |
-| Scale | Responsive frontend application |
-| Performance | Lightweight frontend implementation |
-| Security | Frontend-focused project |
-| Impact | Practical experience with real-world food delivery interfaces |
-| Repository | [Zomato Clone](https://github.com/codewithsaiteja/Zomato-Clone) |
+| Stack | Python · Flask · NetworkX · Matplotlib · ReportLab · JavaScript |
+| Scale | Full-stack systems simulation and analysis platform |
+| Performance | Dual deadlock detection strategies with simulation |
+| Security | Input validation and controlled API workflows |
+| Impact | Detects deadlocks, visualizes resource graphs and generates reports |
+| Repository | [Automated-Deadlock-Detection-Tool](https://github.com/codewithsaiteja/Automated-Deadlock-Detection-Tool) |
+
+### Engineering Highlights
+
+- Implemented Resource Allocation Graph construction.
+- Implemented cycle detection.
+- Implemented Banker's Algorithm safety analysis.
+- Added consistency checks between detection strategies.
+- Generated Resource Allocation Graph visualizations.
+- Added step-by-step simulation.
+- Added recovery recommendations.
+- Added prevention recommendations.
+- Generated downloadable PDF reports.
+- Added REST API endpoints.
+- Added unit tests for detection algorithms and workflows.
+- Prepared deployment using Gunicorn and Render.
 
 </details>
 
 ---
 
-# Experience
+<details>
+<summary><strong>07 — Zomato Clone</strong></summary>
 
-## Full-Stack Software Development
+### Zomato Clone
 
-### Project-Based Development
+A responsive frontend application inspired by Zomato, developed to strengthen practical frontend engineering and responsive UI development.
 
-My development work focuses on designing and implementing complete web applications across frontend, backend, databases and authentication.
+| Category | Details |
+|---|---|
+| Stack | HTML · CSS · JavaScript |
+| Scale | Responsive frontend application |
+| Performance | Lightweight client-side implementation |
+| Security | Frontend-focused application |
+| Impact | Practical experience with responsive interfaces and interactive UI |
+| Repository | [Zomato-Clone](https://github.com/codewithsaiteja/Zomato-Clone) |
 
-### Scope of Work
+### Engineering Highlights
 
-- Build responsive frontend applications using React.js, Vite, HTML and CSS.
-- Develop backend services using Node.js and Express.js.
-- Design MongoDB-backed application workflows.
-- Implement JWT authentication and protected routes.
-- Apply bcrypt-based credential security.
-- Develop REST APIs and connect frontend applications with backend services.
-- Integrate AI capabilities into practical applications.
-- Deploy applications using modern cloud platforms.
-- Apply analytical thinking and problem-solving to software engineering tasks.
+- Search functionality.
+- Restaurant collections.
+- Interactive UI.
+- Responsive design.
+- Structured frontend implementation.
+
+</details>
+
+---
+
+# Additional Work
+
+### LeetCode Solutions
+
+A dedicated repository containing solutions to LeetCode problems focused on **Data Structures & Algorithms, problem-solving and efficient coding** across different difficulty levels and programming languages.
+
+[View LeetCode Solutions Repository](https://github.com/codewithsaiteja/leetcode-solutions)
+
+### Personal Portfolio
+
+My personal developer portfolio is built and deployed as a modern web application.
+
+**Live Portfolio:**  
+https://my-portfolio-kohl-omega-67.vercel.app/
+
+**Repository:**  
+https://github.com/codewithsaiteja/My-Portfolio
+
+---
+
+# Experience & Training
+
+## Smart Event Management System — Summer Training
+
+**Jun 2026 – Jul 2026**
+
+Developed a MERN-based event platform during summer training, focusing on event management, user workflows, authentication and API-driven application architecture.
+
+### Scope
+
+- Developed event creation and discovery workflows.
+- Implemented registration and participation tracking.
+- Organized Admin and User workflows.
+- Implemented JWT authentication.
+- Protected routes and role-based authorization.
+- Integrated React.js, Node.js, Express.js and MongoDB.
+- Built API-driven persistent data workflows.
 
 ### Skills
 
-`React.js` `Vite` `JavaScript` `Node.js` `Express.js`  
-`MongoDB` `JWT` `REST APIs` `Git` `GitHub` `Vercel`  
-`Render` `Railway` `MongoDB Atlas`
+`React.js` `Node.js` `Express.js` `MongoDB` `JWT` `Axios` `CSS`
 
 ---
 
@@ -318,10 +397,10 @@ My development work focuses on designing and implementing complete web applicati
 
 | Recognition | Details |
 |---|---|
-| HackerRank | Earned **5-star rating in Java** — Jul 2026 |
-| LeetCode | Solved **100+ problems** covering Data Structures and Algorithms — Oct 2025–Present |
-| All India NCAT-26 | Secured **90.7 percentile** among Engineering 2028 candidates — May 2026 |
-| GitHub | Built and published multiple full-stack, AI and software engineering projects |
+| HackerRank | **5-Star Rating in Java** — Jul 2026 |
+| LeetCode | **100+ Problems Solved** covering Data Structures & Algorithms — Oct 2025–Present |
+| All India NCAT-26 | **90.7 Percentile** among Engineering 2028 candidates — May 2026 |
+| Project Engineering | Built multiple full-stack, AI-powered and systems-oriented applications |
 
 </div>
 
@@ -333,25 +412,33 @@ My development work focuses on designing and implementing complete web applicati
 
 <img src="https://img.shields.io/badge/Oracle%20Cloud%20Infrastructure%202025-AI%20Foundations%20Associate-F80000?style=for-the-badge&logo=oracle&logoColor=white"/>
 
-**Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate** — May 2026
+**Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate**
+
+`May 2026`
 
 ### IBM SkillsBuild
 
 <img src="https://img.shields.io/badge/IBM-SkillsBuild-1261FE?style=for-the-badge&logo=ibm&logoColor=white"/>
 
-**Web Development Fundamentals** — May 2026
+**Web Development Fundamentals**
+
+`May 2026`
 
 ### Infosys Springboard
 
 <img src="https://img.shields.io/badge/Infosys-Springboard-007CC3?style=for-the-badge&logoColor=white"/>
 
-**Programming in C++** — Aug 2025
+**Programming in C++**
+
+`Aug 2025`
 
 ### Tech Veda
 
 <img src="https://img.shields.io/badge/Tech%20Veda-React.js%20Web%20Development-7c3aed?style=for-the-badge"/>
 
-**React.js Web Development** — Mar 2025
+**React.js Web Development**
+
+`Mar 2025`
 
 ---
 
@@ -365,6 +452,10 @@ My development work focuses on designing and implementing complete web applicati
 
 <a href="https://www.hackerrank.com/">
 <img src="https://img.shields.io/badge/HackerRank-5%20Star%20Java-00EA64?style=for-the-badge&logo=hackerrank&logoColor=white"/>
+</a>
+
+<a href="https://github.com/codewithsaiteja/leetcode-solutions">
+<img src="https://img.shields.io/badge/LeetCode%20Solutions-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </div>
@@ -426,21 +517,21 @@ learning:
   - Advanced Full-Stack Development
   - AI-Powered Application Development
   - Data Structures and Algorithms
+  - Backend Architecture
   - Secure Web Application Development
-  - Backend API Architecture
 
 building:
   - AI-powered applications
   - Conversational commerce systems
-  - AI coding tools
-  - Full-stack web applications
+  - Developer productivity tools
+  - Full-stack SaaS-style platforms
 
 exploring:
+  - Generative AI
   - Conversational AI
   - AI-assisted software development
-  - Natural-language interfaces
   - Scalable backend architectures
-  - Modern deployment platforms
+  - Modern deployment workflows
 
 open_to:
   - Software Engineering opportunities
