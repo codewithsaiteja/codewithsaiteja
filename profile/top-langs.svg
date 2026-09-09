@@ -1,0 +1,43 @@
+<svg width="300" height="191" viewBox="0 0 300 191" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #a9fef7; }
+    .lang   { font: 400 11px 'Segoe UI', Ubuntu, Mono, Arial, sans-serif; fill: #a9b1d6; }
+    .pct    { font: 600 11px 'Segoe UI', Ubuntu, Mono, Arial, sans-serif; fill: #a9fef7; }
+  </style>
+
+  <!-- Background -->
+  <rect x="0.5" y="0.5" rx="4.5" height="99%" stroke="#e4e2e2" width="299" fill="#1a1b27" stroke-opacity="0.1"/>
+
+  <!-- Header -->
+  <text x="25" y="35" class="header">Most Used Languages</text>
+
+  <!-- JavaScript bar (55%) -->
+  <text x="25" y="63" class="lang">JavaScript</text>
+  <text x="260" y="63" class="pct" text-anchor="end">55.0%</text>
+  <rect x="25" y="68" width="250" height="8" rx="4" fill="#374151"/>
+  <rect x="25" y="68" width="137" height="8" rx="4" fill="#f1e05a"/>
+
+  <!-- Python bar (18%) -->
+  <text x="25" y="93" class="lang">Python</text>
+  <text x="260" y="93" class="pct" text-anchor="end">18.0%</text>
+  <rect x="25" y="98" width="250" height="8" rx="4" fill="#374151"/>
+  <rect x="25" y="98" width="45" height="8" rx="4" fill="#3572A5"/>
+
+  <!-- HTML bar (14%) -->
+  <text x="25" y="123" class="lang">HTML</text>
+  <text x="260" y="123" class="pct" text-anchor="end">14.0%</text>
+  <rect x="25" y="128" width="250" height="8" rx="4" fill="#374151"/>
+  <rect x="25" y="128" width="35" height="8" rx="4" fill="#e34c26"/>
+
+  <!-- TypeScript bar (9%) -->
+  <text x="25" y="153" class="lang">TypeScript</text>
+  <text x="260" y="153" class="pct" text-anchor="end">9.0%</text>
+  <rect x="25" y="158" width="250" height="8" rx="4" fill="#374151"/>
+  <rect x="25" y="158" width="22" height="8" rx="4" fill="#3178c6"/>
+
+  <!-- CSS bar (4%) -->
+  <text x="25" y="183" class="lang">CSS</text>
+  <text x="260" y="183" class="pct" text-anchor="end">4.0%</text>
+  <rect x="25" y="188" width="250" height="8" rx="4" fill="#374151"/>
+  <rect x="25" y="188" width="10" height="8" rx="4" fill="#563d7c"/>
+</svg>
