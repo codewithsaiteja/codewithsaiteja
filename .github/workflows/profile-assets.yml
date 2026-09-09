@@ -13,13 +13,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # ── 1. Checkout ─────────────────────────────────────────────────────
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
       - name: Create profile directory
         run: mkdir -p profile
 
-      # ── Contribution Snake ──────────────────────────────────────────────
+      # ── 2. Contribution Snake ────────────────────────────────────────────
+      #    Reads codewithsaiteja's contribution grid via GitHub API and
+      #    renders it as an animated SVG. No commit happens here.
       - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
@@ -28,19 +31,9 @@ jobs:
             profile/github-snake.svg?palette=github-light
             profile/github-snake-dark.svg?palette=github-dark
 
-      - name: Validate snake SVGs
-        run: |
-          for f in profile/github-snake.svg profile/github-snake-dark.svg; do
-            if [ ! -f "$f" ]; then
-              echo "ERROR: $f was not generated"; exit 1
-            fi
-            if ! grep -q '<svg' "$f"; then
-              echo "ERROR: $f does not appear to be a valid SVG"; exit 1
-            fi
-            echo "OK: $f"
-          done
-
-      # ── GitHub Stats (lowlighter/metrics — runs fully in CI, no external service) ──
+      # ── 3. GitHub Stats card ─────────────────────────────────────────────
+      #    output_action: none  →  writes file to workspace only, does NOT
+      #    commit or push independently.
       - name: Generate GitHub stats card
         uses: lowlighter/metrics@latest
         with:
@@ -52,9 +45,11 @@ jobs:
           filename: profile/stats.svg
           config_output: svg
           config_display: large
-          extras_css: |
-            :root { --color-border: transparent; }
+          output_action: none
 
+      # ── 4. Top Languages card ────────────────────────────────────────────
+      #    output_action: none  →  writes file to workspace only, does NOT
+      #    commit or push independently.
       - name: Generate top languages card
         uses: lowlighter/metrics@latest
         with:
@@ -68,23 +63,33 @@ jobs:
           filename: profile/top-langs.svg
           config_output: svg
           config_display: large
-          extras_css: |
-            :root { --color-border: transparent; }
+          output_action: none
 
-      - name: Validate stats SVGs
+      # ── 5. Validate all four SVGs ────────────────────────────────────────
+      #    Fail immediately if any file is missing or is an HTML error page.
+      - name: Validate generated SVGs
         run: |
-          for f in profile/stats.svg profile/top-langs.svg; do
+          FAILED=0
+          for f in profile/github-snake.svg profile/github-snake-dark.svg profile/stats.svg profile/top-langs.svg; do
             if [ ! -f "$f" ]; then
-              echo "ERROR: $f was not generated"; exit 1
+              echo "ERROR: $f was not generated"
+              FAILED=1
+            elif ! grep -q '<svg' "$f"; then
+              echo "ERROR: $f does not contain valid SVG content (possible HTML error page)"
+              FAILED=1
+            else
+              SIZE=$(wc -c < "$f")
+              echo "OK: $f (${SIZE} bytes)"
             fi
-            if ! grep -q '<svg' "$f"; then
-              echo "ERROR: $f does not appear to be a valid SVG (may be an HTML error page)"; exit 1
-            fi
-            echo "OK: $f"
           done
+          if [ "$FAILED" -eq 1 ]; then
+            exit 1
+          fi
 
-      # ── Commit ──────────────────────────────────────────────────────────
-      - name: Commit generated assets
+      # ── 6. Single commit + push ──────────────────────────────────────────
+      #    This is the ONE AND ONLY place that commits and pushes.
+      #    All four SVGs are staged and pushed together.
+      - name: Commit and push generated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -92,7 +97,7 @@ jobs:
           git add profile/
 
           if git diff --cached --quiet; then
-            echo "No profile asset changes."
+            echo "No profile asset changes to commit."
           else
             git commit -m "chore: update GitHub profile assets"
             git push
