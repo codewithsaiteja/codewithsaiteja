@@ -2,7 +2,6 @@ name: Update GitHub Profile Assets
 
 on:
   schedule:
-    # Run automatically every day at 00:00 UTC
     - cron: "0 0 * * *"
   workflow_dispatch:
 
@@ -12,17 +11,18 @@ permissions:
 jobs:
   generate-profile-assets:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
 
     steps:
       # ── 1. Checkout ─────────────────────────────────────────────────────
-      - name: Checkout repository
+      - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Ensure profile directory exists
+      - name: Create profile directory
         run: mkdir -p profile
 
       # ── 2. Contribution Snake ────────────────────────────────────────────
+      #    Reads codewithsaiteja's contribution grid via GitHub API and
+      #    renders it as an animated SVG. No commit happens here.
       - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
@@ -31,16 +31,51 @@ jobs:
             profile/github-snake.svg?palette=github-light
             profile/github-snake-dark.svg?palette=github-dark
 
-      # ── 3. Validate SVGs ────────────────────────────────────────────────
+      # ── 3. GitHub Stats card ─────────────────────────────────────────────
+      #    output_action: none  →  writes file to workspace only, does NOT
+      #    commit or push independently.
+      - name: Generate GitHub stats card
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: codewithsaiteja
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Asia/Kolkata
+          filename: profile/stats.svg
+          config_output: svg
+          config_display: large
+          output_action: none
+
+      # ── 4. Top Languages card ────────────────────────────────────────────
+      #    output_action: none  →  writes file to workspace only, does NOT
+      #    commit or push independently.
+      - name: Generate top languages card
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: codewithsaiteja
+          template: classic
+          base: ""
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 0%
+          filename: profile/top-langs.svg
+          config_output: svg
+          config_display: large
+          output_action: none
+
+      # ── 5. Validate all four SVGs ────────────────────────────────────────
+      #    Fail immediately if any file is missing or is an HTML error page.
       - name: Validate generated SVGs
         run: |
           FAILED=0
-          for f in profile/github-snake.svg profile/github-snake-dark.svg; do
+          for f in profile/github-snake.svg profile/github-snake-dark.svg profile/stats.svg profile/top-langs.svg; do
             if [ ! -f "$f" ]; then
               echo "ERROR: $f was not generated"
               FAILED=1
             elif ! grep -q '<svg' "$f"; then
-              echo "ERROR: $f does not contain valid SVG content"
+              echo "ERROR: $f does not contain valid SVG content (possible HTML error page)"
               FAILED=1
             else
               SIZE=$(wc -c < "$f")
@@ -51,13 +86,15 @@ jobs:
             exit 1
           fi
 
-      # ── 4. Commit and Push ──────────────────────────────────────────────
+      # ── 6. Single commit + push ──────────────────────────────────────────
+      #    This is the ONE AND ONLY place that commits and pushes.
+      #    All four SVGs are staged and pushed together.
       - name: Commit and push generated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add profile/github-snake*.svg
+          git add profile/
 
           if git diff --cached --quiet; then
             echo "No profile asset changes to commit."
