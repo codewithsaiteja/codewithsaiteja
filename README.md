@@ -14,7 +14,7 @@
 
 <br/><br/>
 
-<a href="https://my-portfolio-kohl-omega-67.vercel.app/">
+<a href="https://saitejareddy-portfolio.vercel.app/">
 <img src="https://img.shields.io/badge/Portfolio-Visit%20Website-7c3aed?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
 </a>
 <a href="https://www.linkedin.com/in/saitejareddy45/">
@@ -254,7 +254,7 @@ A repository of LeetCode solutions focused on **Data Structures & Algorithms, pr
 
 ### Personal Portfolio
 
-[Live Portfolio](https://my-portfolio-kohl-omega-67.vercel.app/) · [Source Code](https://github.com/codewithsaiteja/My-Portfolio)
+[Live Portfolio](https://saitejareddy-portfolio.vercel.app/) · [Source Code](https://github.com/codewithsaiteja/My-Portfolio)
 
 ---
 
@@ -338,7 +338,7 @@ Data Structures & Algorithms
 
 <a href="https://github.com/codewithsaiteja">GitHub</a> ·
 <a href="https://www.linkedin.com/in/saitejareddy45/">LinkedIn</a> ·
-<a href="https://my-portfolio-kohl-omega-67.vercel.app/">Portfolio</a> ·
+<a href="https://saitejareddy-portfolio.vercel.app/">Portfolio</a> ·
 <a href="mailto:saitejareddypamidi@gmail.com">Email</a>
 
 </div>
